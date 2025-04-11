@@ -46,13 +46,16 @@
             { href: "/contact", label: "Book a Session" },
             { href: "/portfolio", label: "Our Work" }
           ] as btn}
-            <a href={btn.href} 
-              class="btn w-full sm:w-auto text-white shadow-lg transition-all duration-300 transform hover:scale-105 px-6 py-3 rounded-lg" 
-              style="background-color: var(--color-dark)" 
-              on:mouseout={(e) => e.currentTarget.style.backgroundColor = 'var(--color-dark)'}
+            <a
+            href={btn.href}
+            class="btn w-full sm:w-auto text-white shadow-lg transition-all duration-300 transform hover:scale-105 px-6 py-3 rounded-lg"
+            style="background-color: var(--color-dark)"
+            on:mouseout={(e) => e.currentTarget.style.backgroundColor = 'var(--color-dark)'}
+            on:blur={(e) => e.currentTarget.style.backgroundColor = 'var(--color-dark)'}
             >
-              {btn.label}
+            {btn.label}
             </a>
+
           {/each}
         </div>
       </div>
@@ -89,11 +92,18 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2 transition-colors group-hover:text-[var(--color-primary)]">Project Title 1</h3>
           <p class="mb-4" style="color: var(--color-dark)">Brief description of the project and its success.</p>
-          <a href="/portfolio" class="font-medium" style="color: var(--color-primary)"
-             on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-             on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}>
-            Learn More →
-          </a>
+            <a
+    href="/portfolio"
+    class="font-medium"
+    style="color: var(--color-primary)"
+    on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
+    on:focus={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
+    on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
+    on:blur={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
+  >
+    Learn More →
+  </a>
+
         </div>
       </div>
       <!-- Project 2 -->
@@ -107,11 +117,18 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2 transition-colors group-hover:text-[var(--color-primary)]">Project Title 2</h3>
           <p class="mb-4" style="color: var(--color-dark)">Brief description of the project and its success.</p>
-          <a href="/portfolio" class="font-medium" style="color: var(--color-primary)"
-             on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-             on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}>
-            Learn More →
-          </a>
+          <a
+          href="/portfolio"
+          class="font-medium"
+          style="color: var(--color-primary)"
+          on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
+          on:focus={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
+          on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
+          on:blur={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
+        >
+          Learn More →
+        </a>
+        
         </div>
       </div>
       <!-- Project 3 -->
@@ -125,11 +142,18 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2 transition-colors group-hover:text-[var(--color-primary)]">Project Title 3</h3>
           <p class="mb-4" style="color: var(--color-dark)">Brief description of the project and its success.</p>
-          <a href="/portfolio" class="font-medium" style="color: var(--color-primary)"
-             on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-             on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}>
-            Learn More →
-          </a>
+          <a
+          href="/portfolio"
+          class="font-medium"
+          style="color: var(--color-primary)"
+          on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
+          on:focus={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
+          on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
+          on:blur={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
+        >
+          Learn More →
+        </a>
+        
         </div>
       </div>
     </div>
