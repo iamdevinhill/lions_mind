@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0a0a0a;
+  --color-secondary: #d67b2e;
+  --color-light: #fff3e3;
+  --color-dark: #3d3a35;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 font-sans;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105;
+}
+
+/* Update primary button to use the custom --color-primary */
+.btn-primary {
+  @apply text-white shadow-lg;
+  background-color: var(--color-primary);
+}
+.btn-primary:hover {
+  /* Adjust the brightness on hover (or substitute with a preferred effect) */
+  filter: brightness(85%);
+}
+
+/* Update secondary button to use the custom --color-secondary */
+.btn-secondary {
+  @apply text-white shadow-lg;
+  background-color: var(--color-secondary);
+}
+.btn-secondary:hover {
+  filter: brightness(85%);
+}
+
+/* Use root colors for section titles via a gradient */
+.section-title {
+  @apply text-4xl font-bold mb-12 text-center bg-clip-text text-transparent;
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100;
+}
+
+/* Update navigation links to use root colors */
+.nav-link {
+  @apply relative transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[var(--color-primary)] hover:after:w-full after:transition-all;
+  color: var(--color-dark);
+}
+.nav-link:hover {
+  color: var(--color-secondary);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* .float-animation {
+  animation: float 3s ease-in-out infinite;
+} */
