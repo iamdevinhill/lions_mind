@@ -1,22 +1,22 @@
 <script lang="ts">
   const team = [
     {
-      name: 'John Smith',
-      role: 'Lead Producer',
+      name: 'Logan Lanning',
+      role: 'Producer, Songwriter',
       image: '/vite.svg',
-      bio: 'Grammy-nominated producer with 15+ years of industry experience.'
+      bio: 'Producer and writer extraordinaire.'
     },
     {
-      name: 'Sarah Johnson',
-      role: 'Songwriter',
+      name: 'Gino Quartucci',
+      role: 'Producer, Songwriter',
       image: '/vite.svg',
-      bio: 'Multi-platinum songwriter who has worked with top artists in the industry.'
+      bio: 'Sound design wizard.'
     },
     {
-      name: 'Mike Williams',
-      role: 'Mix Engineer',
+      name: 'Devin Hill',
+      role: 'Engineer, Songwriter',
       image: '/vite.svg',
-      bio: 'Specialist in mixing and mastering with a keen ear for detail.'
+      bio: 'Tech bro.'
     }
   ];
 </script>

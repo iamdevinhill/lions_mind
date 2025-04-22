@@ -54,10 +54,9 @@
       <div>
         <h4 class="text-lg font-semibold mb-4" style="color: var(--color-dark)">Contact Us</h4>
         <ul class="space-y-2" style="color: var(--color-dark)">
-          <li>123 Music Avenue</li>
-          <li>Los Angeles, CA 90028</li>
+          <li>Nashville, TN</li>
           <li>contact@soundscapestudios.com</li>
-          <li>(555) 123-4567</li>
+          <li>(702) 286-4437</li>
         </ul>
 
         <!-- Social Icons -->

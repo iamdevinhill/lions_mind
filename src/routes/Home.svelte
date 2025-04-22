@@ -28,7 +28,6 @@
       {/each}
       
         <!-- Semi-transparent overlay to ensure text readability -->
-        <div class="absolute inset-0 z-10 bg-opacity-40 bg-black"></div>
       </div>
       
       <div class="container relative z-20 text-center px-4">
@@ -75,91 +74,6 @@
       </div>
     </div>
   </section>
-
-<!-- Latest Works -->
-<section class="py-20" style="background: linear-gradient(to bottom, var(--color-light), white)">
-  <div class="container">
-    <h2 class="section-title">Latest Works</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Project 1 -->
-      <div class="card group">
-        <div class="relative overflow-hidden">
-          <img src="https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg" alt="Music Production Desk" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-            <span class="text-white font-semibold">View Project</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 transition-colors group-hover:text-[var(--color-primary)]">Project Title 1</h3>
-          <p class="mb-4" style="color: var(--color-dark)">Brief description of the project and its success.</p>
-            <a
-    href="/portfolio"
-    class="font-medium"
-    style="color: var(--color-primary)"
-    on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-    on:focus={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-    on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
-    on:blur={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
-  >
-    Learn More →
-  </a>
-
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="card group">
-        <div class="relative overflow-hidden">
-          <img src="https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg" alt="Audio Mixer Close-Up" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-            <span class="text-white font-semibold">View Project</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 transition-colors group-hover:text-[var(--color-primary)]">Project Title 2</h3>
-          <p class="mb-4" style="color: var(--color-dark)">Brief description of the project and its success.</p>
-          <a
-          href="/portfolio"
-          class="font-medium"
-          style="color: var(--color-primary)"
-          on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-          on:focus={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-          on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
-          on:blur={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
-        >
-          Learn More →
-        </a>
-        
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="card group">
-        <div class="relative overflow-hidden">
-          <img src="https://images.pexels.com/photos/164938/pexels-photo-164938.jpeg" alt="Recording Studio Session" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-            <span class="text-white font-semibold">View Project</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2 transition-colors group-hover:text-[var(--color-primary)]">Project Title 3</h3>
-          <p class="mb-4" style="color: var(--color-dark)">Brief description of the project and its success.</p>
-          <a
-          href="/portfolio"
-          class="font-medium"
-          style="color: var(--color-primary)"
-          on:mouseover={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-          on:focus={(e) => e.currentTarget.style.color = 'var(--color-secondary)'}
-          on:mouseout={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
-          on:blur={(e) => e.currentTarget.style.color = 'var(--color-primary)'}
-        >
-          Learn More →
-        </a>
-        
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 
   <!-- Testimonials -->
